@@ -12,7 +12,7 @@ const Home = () => {
             I build things for the web.
           </h6>
           <NavLink to="/About" className="nav-link">
-            <CustomButton text="Who I am " size="small" icon ={ <i className="fa-solid fa-angle-right"></i>}/>
+            <CustomButton text="Who I am " size="large" icon ={ <i className="fa-solid fa-angle-right"></i>}/>
           </NavLink>
         </div>
       </div>

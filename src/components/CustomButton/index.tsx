@@ -9,7 +9,7 @@ interface ICustomButton {
 const CustomButton = ({ text, size, icon }: ICustomButton) => {
   let customSize =
     size === "small"
-      ? { width: "250px", height: "50px" }
+      ? { width: "150px", height: "50px" }
       : { width: "250px", height: "50px" };
 
   return (
