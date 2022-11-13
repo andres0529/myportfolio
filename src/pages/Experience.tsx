@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Project from "../components/Project";
 import Skill from "../components/Skill";
 
@@ -184,18 +184,27 @@ const data = {
   ],
 };
 
-
 const Experience = () => {
   const [infoJob, setInfoJob] = useState(data.experience[0]);
-  const [activeButton, setActiveButton] = useState(false)
+  const [selectedButton, setSelectedButton] = useState(data.experience[0].id);
 
-  let enableButton = {};
+  // Method to enable the button once is clicked
+  const handdlerButtons = (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
+    const { target } = e;
+    const id = (target as HTMLButtonElement).id;
 
+    const info = data.experience.find((job) => {
+      return job.id === id;
+    });
 
-  useEffect(() => {
-    
-  }, [])
-  
+    //if info is no undefined, then change the state
+    if (info) {
+      setSelectedButton(id);
+      setInfoJob(info);
+    }
+  };
 
   return (
     <div id="experience" className="container h-100 ">
@@ -223,13 +232,19 @@ const Experience = () => {
             <div className="job-btns col-12 col-md-3 d-flex flex-row flex-md-column ">
               {
                 /* //****** Method to create Buttons accoridng to the data ****/
-                data.experience.map((job, index) => {
+                data.experience.map((job) => {
                   return (
                     <button
                       id={job.id}
-                      key={job.id}
+                      onClick={(e) => handdlerButtons(e)}
+                      key={job.logoUrl}
                       type="button"
-                      className= {(index===0)?"btn btn-outline-secondary activeButton":"btn btn-outline-secondary"}>
+                      className={
+                        job.id === selectedButton //checking if the state == id button
+                          ? "btn btn-outline-secondary activeButton"
+                          : "btn btn-outline-secondary"
+                      }
+                    >
                       {job.companyName}
                     </button>
                   );
@@ -256,7 +271,9 @@ const Experience = () => {
                 <p className="mt-2">{infoJob.description}</p>
                 <ul className="">
                   {infoJob.tasks.map((task) => (
-                    <li className="mt-4">{task} </li>
+                    <li key={task} className="mt-4">
+                      {task}{" "}
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -277,7 +294,11 @@ const Experience = () => {
             </div>
             <div className="d-flex flex-wrap skills ">
               {data.skills.map((skill) => (
-                <Skill name={skill.name} urlImage={skill.urlImage} />
+                <Skill
+                  key={skill.name}
+                  name={skill.name}
+                  urlImage={skill.urlImage}
+                />
               ))}
             </div>
           </div>
@@ -294,6 +315,7 @@ const Experience = () => {
             <div className="d-flex flex-wrap projects">
               {data.projects.map((project) => (
                 <Project
+                  key={project.name}
                   name={project.name}
                   urlImage={project.urlImage}
                   urlRepo={project.urlRepo}
