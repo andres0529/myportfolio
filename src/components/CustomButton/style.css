@@ -8,7 +8,7 @@
     text-align: center;
     cursor: pointer;
   }
-   .btnMore span {
+   .btnMore span, .btnMore input {
     transition: all 0.3s;
     color: #00d6ff;
     font-family: "Lato";

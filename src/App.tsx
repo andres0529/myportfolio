@@ -11,7 +11,7 @@ import Landing from "./pages/Landing";
 
 function App() {
   // state variable to switch the pages once the timne end
-  const [handdlerLoadPages, setHanddlerLoadPages] = useState(false);
+  const [handdlerLoadPages, setHanddlerLoadPages] = useState(true);
 
   // hook to manage the time for thge landing
   useEffect(() => {

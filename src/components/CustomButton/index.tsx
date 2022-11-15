@@ -13,7 +13,7 @@ const CustomButton = ({ text, size, icon }: ICustomButton) => {
       : { width: "250px", height: "50px" };
 
   return (
-    <div className="btnMore mt-5" style={{ width: customSize.width, height: customSize.height }}>
+    <div className="btnMore" style={{ width: customSize.width, height: customSize.height }}>
       <span><>{text} {icon}</></span>
     </div>
   );

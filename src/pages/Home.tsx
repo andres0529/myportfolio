@@ -11,7 +11,7 @@ const Home = () => {
           <h6 className="glitch" data-text="I build things for the web.">
             I build things for the web.
           </h6>
-          <NavLink to="/About" className="nav-link">
+          <NavLink to="/About" className="nav-link mt-5">
             <CustomButton text="Who I am " size="large" icon ={ <i className="fa-solid fa-angle-right"></i>}/>
           </NavLink>
         </div>

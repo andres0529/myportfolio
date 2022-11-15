@@ -93,10 +93,6 @@ const data = {
       name: "Bootstrap",
       urlImage: require("./../assets/img/logos/bootstrap.svg").default,
     },
-    {
-      name: "Material-UI",
-      urlImage: require("./../assets/img/logos/material.svg").default,
-    },
 
     {
       name: "Jest",
