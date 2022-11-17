@@ -16,13 +16,11 @@ const Contact = () => {
     name: false,
     email: false,
     message: false,
-    submit: false,
   });
 
   //use the Hook useRef for submit the form once is done
   const formulary = useRef<HTMLFormElement>(null);
 
-  const validatorMethod = () => {};
 
   //******method to handle submit button*****
   const handleSubmit = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -53,7 +51,8 @@ const Contact = () => {
 
     setIsError(states);
 
-    if (formulary.current) {
+    //If formulary is NOT undefined and there is not any true in the object isError, then submit()
+    if (formulary.current && !Object.values(states).includes(true)) {
       navigate("/about");
       formulary.current.submit()
     }

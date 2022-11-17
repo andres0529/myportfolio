@@ -1,5 +1,3 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
 import CustomButton from "../components/CustomButton";
 import photo from "./../assets/img/me.jpg";
 
