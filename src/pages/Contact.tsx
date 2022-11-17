@@ -1,7 +1,64 @@
-import React from "react";
+import { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import CustomButton from "../components/CustomButton/index";
 
 const Contact = () => {
+  const navigate = useNavigate();
+  // variable state to save the data
+  const [info, setInfo] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  //variable state to manage errors
+  const [isError, setIsError] = useState({
+    name: false,
+    email: false,
+    message: false,
+    submit: false,
+  });
+
+  //use the Hook useRef for submit the form once is done
+  const formulary = useRef<HTMLFormElement>(null);
+
+  const validatorMethod = () => {};
+
+  //******method to handle submit button*****
+  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.preventDefault();
+
+    let states = isError;
+
+    // //if name is empty
+    if (!info.name) {
+      states = { ...states, name: true };
+    } else {
+      states = { ...states, name: false };
+    }
+
+    //if message is empty
+    if (!info.message) {
+      states = { ...states, message: true };
+    } else {
+      states = { ...states, message: false };
+    }
+
+    // // if emai is wrong based on the Regex
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(info.email)) {
+      states = { ...states, email: true };
+    } else {
+      states = { ...states, email: false };
+    }
+
+    setIsError(states);
+
+    if (formulary.current) {
+      navigate("/about");
+      formulary.current.submit()
+    }
+  };
+
   return (
     <div id="contact" className="container h-100 ">
       <div className="row">
@@ -15,16 +72,16 @@ const Contact = () => {
         </div>
         <div className="row mt-3 mainContent">
           <div className="col-12 col-md-6 col-lg-6 leftSide">
-            <div className="containerInfo">
-              <div className="mt-4 mail">
+            <div>
+              <div className="mt-5 mail">
                 <h4>E-mail address</h4>
                 <span>andrescorrea.m@hotmail.com</span>
               </div>
-              <div className="mt-4 phone">
+              <div className="mt-5 phone">
                 <h4>Let's talk</h4>
                 <span>(+1)6475098502</span>
               </div>
-              <div className="mt-4 socialIcons">
+              <div className="mt-5 socialIcons">
                 <h4>Social Networks</h4>
                 <ul className="d-flex">
                   <li>
@@ -33,37 +90,70 @@ const Contact = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="https://github.com/andres0529"><i className="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/andres0529">
+                      <i className="fa-brands fa-github"></i>
+                    </a>
                   </li>
                   <li>
-                    <a href="https://www.hackerrank.com/andrescorrea_m"><i className="fa-brands fa-hackerrank"></i></a>
+                    <a href="https://www.hackerrank.com/andrescorrea_m">
+                      <i className="fa-brands fa-hackerrank"></i>
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-6 rightSide">
+          <div className="col-12 col-md-6 col-lg-6 rightSide pt-4">
             <h3>Send Me A Message</h3>
-            <form action="https://formspree.io/f/meqdlgay" method="post">
+            <form
+              className=""
+              action="https://formspree.io/f/meqdlgay"
+              method="post"
+              ref={formulary}
+            >
               <fieldset>
                 <div>
-                  <label htmlFor="name">Name</label>
-                  <input id="name" type="text" name="name" required />
+                  <label htmlFor="name">Name</label>{" "}
+                  {isError.name && <span>Required field</span>}
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder="Type your name..."
+                    onChange={(e) => setInfo({ ...info, name: e.target.value })}
+                  />
                 </div>
                 <div className="mt-2">
-                  <label htmlFor="email">Email</label>
-                  <input id="email" type="email" name="email" required />
+                  <label htmlFor="email">Email</label>{" "}
+                  {isError.email && <span>Invalid format</span>}
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="@"
+                    onChange={(e) =>
+                      setInfo({ ...info, email: e.target.value })
+                    }
+                  />
                 </div>
-                <div className="mt-2">
-                  <label htmlFor="message">What can we help you with?</label>
-                  <textarea id="message" name="message" required></textarea>
+                <div className="mt-2 pt-1">
+                  <label htmlFor="message">What can we help you with?</label>{" "}
+                  {isError.message && <span>Required field</span>}
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Type you message..."
+                    onChange={(e) =>
+                      setInfo({ ...info, message: e.target.value })
+                    }
+                  />
                 </div>
               </fieldset>
               <div className="text-center">
-                <button type="submit">
+                <button onClick={(e) => handleSubmit(e)}>
                   <CustomButton
                     text="Send"
-                    icon={<i className="fa-solid fa-paper-plane"></i>}
+                    icon={<i className="fa-solid fa-paper-plane" />}
                     size="small"
                   />
                 </button>

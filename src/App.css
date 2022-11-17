@@ -568,29 +568,25 @@ li {
   font-size: 20px;
 }
 
-#contact .mainContent .leftSide ul li i{
+#contact .mainContent .leftSide ul li i {
   font-size: 30px;
   color: #00d6ff;
 }
 
-#contact .mainContent .leftSide ul li a:hover i{
-  color:#ee445f
+#contact .mainContent .leftSide ul li a:hover i {
+  color: #ee445f;
 }
 
-#contact .mainContent .leftSide ul li{
+#contact .mainContent .leftSide ul li {
   padding: 10px;
 }
-
 
 #contact .mainContent .rightSide {
   background-color: #222b31;
   width: 500px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  padding-top: 20px;
 }
-
-
 
 #contact .mainContent .rightSide form {
   height: 90%;
@@ -599,10 +595,6 @@ li {
   text-align: center;
   margin: 0;
   padding: 0;
-}
-
-#contact .mainContent .rightSide label {
-  display: block;
 }
 
 #contact .mainContent .rightSide form button {
@@ -617,6 +609,7 @@ li {
   width: 100%;
   resize: none;
   border: none;
+  padding-left: 10px;
   /* background-color: #28606c; */
 }
 
@@ -631,6 +624,13 @@ li {
 
 #contact .mainContent .rightSide form fieldset {
   padding: 15px;
+  font-size: 18px;
+}
+
+#contact .mainContent .rightSide form fieldset span{
+  margin-left: 20px;
+  color: #ee445f;
+
 }
 
 /*====================================================================================================
