@@ -59,7 +59,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="container h-100 ">
+    <div id="contact" className="container">
       <div className="row">
         <div className="row mt-5">
           <div className=" col-md-2 ">

@@ -198,7 +198,7 @@ const Experience = () => {
   };
 
   return (
-    <div id="experience" className="container h-100 ">
+    <div id="experience" className="container">
       {/* <!-- container for title and line --> */}
       <div className="row mt-5">
         <div className="row">
