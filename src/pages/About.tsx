@@ -10,7 +10,7 @@ const data = {
 
 const About = () => {
   return (
-    <div id="about" className="container h-100 ">
+    <div id="about" className="container">
       <div className="row mt-5">
         <div className=" col-md-6 col-lg-6 row">
           <div className=" col-md-3">

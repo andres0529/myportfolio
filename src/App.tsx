@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setHanddlerLoadPages(false);
-    }, 10500);
+    }, 2000);
 
     return () => clearTimeout(timeout);
   }, []);
@@ -30,12 +30,12 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Navigate to="/Home" />} />
-            <Route path="/Home" element={<Home />} />
-            <Route path="/About" element={<About />} />
-            <Route path="/Experience" element={<Experience />} />
-            <Route path="/Services" element={<Services />} />
-            <Route path="/Contact" element={<Contact />} />
+            <Route path="/" element={<Navigate to="/home" />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </BrowserRouter>
       )}

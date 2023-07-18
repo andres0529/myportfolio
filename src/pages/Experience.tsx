@@ -3,63 +3,6 @@ import Project from "../components/Project";
 import Skill from "../components/Skill";
 
 const data = {
-  jobs: [
-    {
-      id: "conexcol",
-      logoUrl: "./../../Assets/img/logos/conexcol.png",
-      companyName: "Conexcol Cloud",
-      position: "Support Engineer",
-      date: "Feb 2010 - Nov 2016",
-      description: `Conexcol is a company oriented to service infrastructure, in which I participate by performing the  tasks:`,
-      tasks: [
-        "Collaborated with the Design team to create new application features using React Js, Redux and Ant Design.",
-        "Interfaced directly with customers to solve their technical issues through empathetic problem solving.",
-        "Developed company website and customer orientation Deployed mail servers, SSL certificate installation, CAL license configuration, port manipulation and DNS records.",
-        "Broke down and evaluated user problems, using test scripts, personal expertise and probing questions.",
-      ],
-    },
-    {
-      id: "paradigma",
-      logoUrl: "./../../Assets/img/logos/paradigma.jfif",
-      companyName: "Paradigma Solutions",
-      position: "Web Developer",
-      date: "Jul 2019 - Apr 2020",
-      description: `Paradigma is a family of programmers dedicated to developing any type of software or web design that is required. Some of the tasks in which I had the opportunity to participate are:`,
-      tasks: [
-        "Maintenance and deployment of DOT NET NUKE components for <a href='https://argos-us.com/'>Argos pages </a> in Colombia, Honduras, USA and Guyanna",
-        "Developed Single Page Apps (SPAs) using React Js, MaterialUI and ReactHooks.",
-        "I collaborated in the creation of React components for the web application of <a href='https://www.contraloria.gov.co/es/web/guest/atencion-al-ciudadano/denuncias-y-otras-solicitudes-pqrd'>Contraloria Genral de la Nacion</a> using Jest and Huskey as testing frameworks and Redux for application state management",
-        "developed some components in Angular CLI for the creation of the Kitchensink library, a library for internal use of the company for the development of applications",
-      ],
-    },
-    {
-      id: "globant",
-      logoUrl: "./../../Assets/img/logos/globant.jpg",
-      companyName: "Globant",
-      position: "Web UI Developer",
-      date: "Dec 2020 - Nov 2021",
-      description: `Globant is a publicly traded software development agency focused on serving corporate clients worldwide. My role as a UI developer had several important tasks like:`,
-      tasks: [
-        "I collaborated in the migration of 2 applications in AngularJS to ReactJS, using technologies such as Redux, Hooks, Typescript, Recharts and I was in the complete life cycle of the project.",
-        "Technologies such as StoryBookJS and Jest for unit tests were used for the development of each component, which allowed testing the components created before integration.",
-        "The client for which we developed the migration is <a href='https://www.americancentury.com/home/'>American Century Investment</a> , with whom we had weekly meetings to show the progress of the project using the SCRUM methodology.",
-      ],
-    },
-    {
-      id: "bdo",
-      logoUrl: "./../../Assets/img/logos/bdo.png",
-      companyName: "BDO Canada",
-      position: "Software and Web Developer, Intern",
-      date: "May 2022 - Aug 2022",
-      description: `BDO or Binder Dijker Otte is an international network of public accounting, tax, consulting and business advisory firms. Some of the tasks performed were:`,
-      tasks: [
-        "To give back and support communities in need, BDO Canada annually launches the <a href='https://www.bdo.ca/en-ca/about/people-values/drive-away-hunger/'>Drive Away Hunger</a> campaign with a goal to donate 1 million meals to food banks across Canada. For fundraising, the DAH application was developed from its design to its deployment.",
-
-        "Complete creation of the Drive Away Hunger application, which is based on ReactJS components, React Router, Hooks, API Context, Bootstrap, Material UI as FrontEnd and ASP.NET 6 and SQL for the BackEnd",
-      ],
-    },
-  ],
-
   skills: [
     {
       name: "HTML5",
@@ -177,6 +120,58 @@ const data = {
         "Complete creation of the Drive Away Hunger application, which is based on ReactJS components, React Router, Hooks, API Context, Bootstrap, Material UI as FrontEnd and ASP.NET 6 and SQL for the BackEnd",
       ],
     },
+    {
+      id: "otro",
+      logoUrl: require("./../assets/img/logos/bdo.svg").default,
+      companyName: "BDO Canada",
+      position: "Software and Web Developer, Intern",
+      date: "May 2022 - Aug 2022",
+      description: `BDO or Binder Dijker Otte is an international network of public accounting, tax, consulting and business advisory firms. Some of the tasks performed were:`,
+      tasks: [
+        "To give back and support communities in need, BDO Canada annually launches the <a href='https://www.bdo.ca/en-ca/about/people-values/drive-away-hunger/'>Drive Away Hunger</a> campaign with a goal to donate 1 million meals to food banks across Canada. For fundraising, the DAH application was developed from its design to its deployment.",
+
+        "Complete creation of the Drive Away Hunger application, which is based on ReactJS components, React Router, Hooks, API Context, Bootstrap, Material UI as FrontEnd and ASP.NET 6 and SQL for the BackEnd",
+      ],
+    },
+    {
+      id: "otro",
+      logoUrl: require("./../assets/img/logos/bdo.svg").default,
+      companyName: "BDO Canada",
+      position: "Software and Web Developer, Intern",
+      date: "May 2022 - Aug 2022",
+      description: `BDO or Binder Dijker Otte is an international network of public accounting, tax, consulting and business advisory firms. Some of the tasks performed were:`,
+      tasks: [
+        "To give back and support communities in need, BDO Canada annually launches the <a href='https://www.bdo.ca/en-ca/about/people-values/drive-away-hunger/'>Drive Away Hunger</a> campaign with a goal to donate 1 million meals to food banks across Canada. For fundraising, the DAH application was developed from its design to its deployment.",
+
+        "Complete creation of the Drive Away Hunger application, which is based on ReactJS components, React Router, Hooks, API Context, Bootstrap, Material UI as FrontEnd and ASP.NET 6 and SQL for the BackEnd",
+      ],
+    },
+    {
+      id: "otro",
+      logoUrl: require("./../assets/img/logos/bdo.svg").default,
+      companyName: "BDO Canada",
+      position: "Software and Web Developer, Intern",
+      date: "May 2022 - Aug 2022",
+      description: `BDO or Binder Dijker Otte is an international network of public accounting, tax, consulting and business advisory firms. Some of the tasks performed were:`,
+      tasks: [
+        "To give back and support communities in need, BDO Canada annually launches the <a href='https://www.bdo.ca/en-ca/about/people-values/drive-away-hunger/'>Drive Away Hunger</a> campaign with a goal to donate 1 million meals to food banks across Canada. For fundraising, the DAH application was developed from its design to its deployment.",
+
+        "Complete creation of the Drive Away Hunger application, which is based on ReactJS components, React Router, Hooks, API Context, Bootstrap, Material UI as FrontEnd and ASP.NET 6 and SQL for the BackEnd",
+      ],
+    },
+    {
+      id: "otro",
+      logoUrl: require("./../assets/img/logos/bdo.svg").default,
+      companyName: "BDO Canada",
+      position: "Software and Web Developer, Intern",
+      date: "May 2022 - Aug 2022",
+      description: `BDO or Binder Dijker Otte is an international network of public accounting, tax, consulting and business advisory firms. Some of the tasks performed were:`,
+      tasks: [
+        "To give back and support communities in need, BDO Canada annually launches the <a href='https://www.bdo.ca/en-ca/about/people-values/drive-away-hunger/'>Drive Away Hunger</a> campaign with a goal to donate 1 million meals to food banks across Canada. For fundraising, the DAH application was developed from its design to its deployment.",
+
+        "Complete creation of the Drive Away Hunger application, which is based on ReactJS components, React Router, Hooks, API Context, Bootstrap, Material UI as FrontEnd and ASP.NET 6 and SQL for the BackEnd",
+      ],
+    }
   ],
 };
 
