@@ -56,58 +56,6 @@ li {
   list-style: none;
 }
 
-/* ************************************* About style *************************************/
-#about {
-  color: #fff;
-}
-#about p a,
-#experience li a {
-  color: #00d6ff;
-  text-decoration: none;
-}
-#about p a:hover,
-#experience li a:hover {
-  color: #ee445f;
-  transition: all ease 0.5s;
-}
-#about button {
-  width: 200px;
-  align-self: center;
-  font-size: 14px;
-  font-family: "Lato";
-  font-weight: 300;
-  letter-spacing: 1px;
-  color: #00d6ff;
-  border-color: #00d6ff;
-  box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
-}
-#about button:hover {
-  color: #ee445f;
-  border-color: #ee445f;
-  background-color: transparent;
-}
-#about img {
-  width: 80%;
-  border-radius: 5px;
-  box-shadow: blue 0px 0px 5px 8px inset, rgb(52 60 64) 31px 29px 2px -4px,
-    rgb(0 214 255) 32px 30px, rgb(52 60 64) 4px -15px 0px -3px;
-  transition: all linear 0.3s;
-}
-#about img:hover {
-  box-shadow: blue 0px 0px 5px 8px inset, rgb(52 60 64) 15px 16px 2px -4px,
-    rgb(238 68 95) 15px 15px, rgb(52 60 64) 4px -15px 0px -3px;
-  transition: all linear 0.3s;
-}
-
-@keyframes animate {
-  0% {
-    background-position: -500%;
-  }
-  100% {
-    background-position: 500%;
-  }
-}
-
 /* ************** Experience style **************/
 #experience {
   color: #fff;
@@ -404,27 +352,12 @@ Screen - Small (xs) - 480px or vertical 320px
     overflow-y: auto;
   }
 
-  #about,
   #experience,
   #services,
   #contact {
     margin-top: 80px;
   }
-  #about .photo {
-    width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-  #about img {
-    box-shadow: blue 0px 0px 5px 8px inset, rgb(52 60 64) 32px 12px 2px -4px,
-      rgb(0 214 255) 32px 12px, rgb(52 60 64) 4px -15px 0px -3px;
-  }
 
-  #about img:hover {
-    box-shadow: blue 0px 0px 5px 8px inset, rgb(52 60 64) 13px 9px 2px -4px,
-      rgb(238 68 95) 13px 9px, rgb(52 60 64) 4px -15px 0px -3px;
-  }
-  #about p,
   #experience li {
     padding: 0px 10px;
   }
@@ -489,5 +422,16 @@ Screen - Small (xs) - 480px or vertical 320px
 @media (max-width: 991px) and (min-width: 768px) {
   html {
     overflow-y: scroll;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    min-width: 1400px;
   }
 }

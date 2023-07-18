@@ -1,0 +1,87 @@
+/* ************************************* About style *************************************/
+#about {
+  color: #fff;
+}
+#about p a,
+#experience li a {
+  color: #00d6ff;
+  text-decoration: none;
+}
+#about p a:hover,
+#experience li a:hover {
+  color: #ee445f;
+  transition: all ease 0.5s;
+}
+#about button {
+  width: 200px;
+  align-self: center;
+  font-size: 14px;
+  font-family: "Lato";
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #00d6ff;
+  border-color: #00d6ff;
+  box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
+}
+#about button:hover {
+  color: #ee445f;
+  border-color: #ee445f;
+  background-color: transparent;
+}
+#about img {
+  width: 450px;
+  height: 500px;
+  border-radius: 5px;
+  box-shadow: blue 0px 0px 5px 8px inset, rgb(52 60 64) 31px 29px 2px -4px,
+    rgb(0 214 255) 32px 30px, rgb(52 60 64) 4px -15px 0px -3px;
+  transition: all linear 0.3s;
+}
+#about img:hover {
+  box-shadow: blue 0px 0px 5px 8px inset, rgb(52 60 64) 15px 16px 2px -4px,
+    rgb(238 68 95) 15px 15px, rgb(52 60 64) 4px -15px 0px -3px;
+  transition: all linear 0.3s;
+}
+
+#about p {
+  text-align: justify;
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+@media (max-width: 767px) {
+  #about {
+    margin-top: 80px;
+    padding-bottom: 20px;
+  }
+  #about .preferably-square {
+    aspect-ratio: 1 / 1.4;
+  }
+  #about img {
+    width: 80%;
+    height: 80%;
+  }
+  #about .photo {
+    width: 70%;
+  }
+  #about img {
+    box-shadow: blue 0px 0px 5px 8px inset, rgb(52 60 64) 32px 12px 2px -4px,
+      rgb(0 214 255) 32px 12px, rgb(52 60 64) 4px -15px 0px -3px;
+  }
+  #about img:hover {
+    box-shadow: blue 0px 0px 5px 8px inset, rgb(52 60 64) 13px 9px 2px -4px,
+      rgb(238 68 95) 13px 9px, rgb(52 60 64) 4px -15px 0px -3px;
+  }
+  #about p {
+    padding: 0px 10px;
+  }
+  #about > div:nth-child(2) {
+    justify-content: center;
+  }
+}
