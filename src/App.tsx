@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setHanddlerLoadPages(false);
-    }, 2000);
+    }, 1500);
 
     return () => clearTimeout(timeout);
   }, []);

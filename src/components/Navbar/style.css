@@ -1,18 +1,22 @@
 nav {
-    background: #222b31 !important;
-    border-bottom: 4px solid #ee445f !important;
-    font: 12px Lato !important;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    min-height: 8vh;
-  }
-  
-  nav figure {
-    width: 80px;
-    height: 15px;
-  }
+  background: #222b31 !important;
+  border-bottom: 4px solid #ee445f !important;
+  font: 12px Lato !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  min-height: 8vh;
+}
 
+nav figure {
+  width: 80px;
+  height: 15px;
+}
 
-  .nav-link:focus{
-    color: #FFF;
-  }
+.nav-link:focus {
+  color: #fff;
+}
+
+nav figure img {
+  width: 107px;
+  margin-top: -4px;
+}

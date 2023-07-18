@@ -97,11 +97,7 @@ li {
   justify-content: center;
   height: 90%;
 }
-#home-background {
-  /* background-image: url('./assets/img/bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat; */
-}
+
 
 #home .nav-link {
   display: flex;
