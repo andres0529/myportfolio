@@ -71,36 +71,7 @@ const Contact = () => {
         </div>
         <div className="row mt-3 mainContent">
           <div className="col-12 col-md-6 col-lg-6 leftSide">
-            <div>
-              <div className="mt-5 mail">
-                <h4>E-mail address</h4>
-                <span>andrescorrea.m@hotmail.com</span>
-              </div>
-              <div className="mt-5 phone">
-                <h4>Let's talk</h4>
-                <span>(+1)6475098502</span>
-              </div>
-              <div className="mt-5 socialIcons">
-                <h4>Social Networks</h4>
-                <ul className="d-flex">
-                  <li>
-                    <a href="https://www.linkedin.com/in/andres-correa-moreno/">
-                      <i className="fa-brands fa-linkedin"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/andres0529">
-                      <i className="fa-brands fa-github"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.hackerrank.com/andrescorrea_m">
-                      <i className="fa-brands fa-hackerrank"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+
           </div>
           <div className="col-12 col-md-6 col-lg-6 rightSide pt-4">
             <h3>Send Me A Message</h3>

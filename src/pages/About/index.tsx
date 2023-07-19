@@ -1,3 +1,4 @@
+import { useState } from "react";
 import CustomButton from "../../components/CustomButton";
 import photo from "./../../assets/img/me.jpg";
 import "./style.css";
@@ -10,6 +11,8 @@ const data = {
 };
 
 const About = () => {
+  const [rotatePhoto, setRotatePhoto] = useState("0");
+
   return (
     <div id="about" className="container">
       <div className="row mt-5">
@@ -51,12 +54,12 @@ const About = () => {
               Paradigma Solutions
             </a>
             , and
-            <a href="https://www.bdo.ca/en-ca/home/"> BDO Canada</a>; 
-            These experiences have provided me with exposure to cutting-edge
-            front-end development technologies and have played a pivotal role in
-            shaping my professional growth. Moreover, I have also gained
-            valuable experience working with backend technologies in BDO, which
-            has broadened my skill set and enabled me to consider myself as a
+            <a href="https://www.bdo.ca/en-ca/home/"> BDO Canada</a>; These
+            experiences have provided me with exposure to cutting-edge front-end
+            development technologies and have played a pivotal role in shaping
+            my professional growth. Moreover, I have also gained valuable
+            experience working with backend technologies in BDO, which has
+            broadened my skill set and enabled me to consider myself as a
             proficient full stack developer.
           </p>
           <p>
@@ -80,8 +83,51 @@ const About = () => {
             </div>
           </a>
         </div>
-        <div className="col-5 col-md-12 col-lg-5 offset-md-lg-xl-1 d-flex justify-content-lg-end justify-content-center photo">
-          <img src={photo} alt="Andres Correa" className="preferably-square" />
+        <div className="preferably-square col-5 col-md-12 col-lg-5 offset-md-lg-xl-1 d-flex justify-content-lg-end justify-content-center photo">
+          <div
+            className="flip-card"
+            onClick={() => {
+              rotatePhoto === "0" ? setRotatePhoto("180") : setRotatePhoto("0");
+            }}
+          >
+            <div
+              className="flip-card-inner"
+              style={{ transform: `rotateY(${rotatePhoto}deg)` }}
+            >
+              <div className="flip-card-front">
+                <img
+                  src={photo}
+                  alt="Andres Correa"
+                  className="preferably-square"
+                />
+              </div>
+           
+
+
+
+                <div className="card__bx card__2 flip-card-back">
+                  <div className="card__data">
+                    <div className="card__icon">
+                      <div className="card__icon-bx">
+                        <i className="fa-solid fa-code"></i>
+                      </div>
+                    </div>
+                    <div className="card__content">
+                      <h3>Development</h3>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </p>
+                      <a href="#">Read More</a>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              
+            </div>
+          </div>
         </div>
       </div>
     </div>
