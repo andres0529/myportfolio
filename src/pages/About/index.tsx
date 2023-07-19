@@ -1,6 +1,8 @@
 import { useState } from "react";
 import CustomButton from "../../components/CustomButton";
 import photo from "./../../assets/img/me.jpg";
+import qr from "./../../assets/img/logos/qrcodeblue.png";
+
 import "./style.css";
 
 const data = {
@@ -68,20 +70,6 @@ const About = () => {
             thrilled to connect and explore how I can contribute to your
             projects. Let's create remarkable experiences together!"
           </p>
-          <a
-            className="d-flex justify-content-center"
-            href={
-              "https://www.dropbox.com/s/gh5ksho3u0cn9d9/Resume-AndresCorrea-Oct-2022.pdf?dl=0"
-            }
-          >
-            <div className="mt-1">
-              <CustomButton
-                text="Resume"
-                size="small"
-                icon={<i className="fa-solid fa-angle-down"></i>}
-              />
-            </div>
-          </a>
         </div>
         <div className="preferably-square col-5 col-md-12 col-lg-5 offset-md-lg-xl-1 d-flex justify-content-lg-end justify-content-center photo">
           <div
@@ -101,31 +89,35 @@ const About = () => {
                   className="preferably-square"
                 />
               </div>
-           
 
-
-
-                <div className="card__bx card__2 flip-card-back">
-                  <div className="card__data">
-                    <div className="card__icon">
-                      <div className="card__icon-bx">
-                        <i className="fa-solid fa-code"></i>
-                      </div>
+              <div className="card__bx card__2 flip-card-back">
+                <div className="card__data">
+                  <div className="card__icon">
+                    <div className="card__icon-bx">
+                      <i className="fa-solid fa-code"></i>
                     </div>
-                    <div className="card__content">
-                      <h3>Development</h3>
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                      </p>
-                      <a href="#">Read More</a>
+                  </div>
+                  <div className="card__content">
+                    <figure>
+                      <img src={qr} alt="qrlogo" className="w-50" />
+                    </figure>
+                    <div className="mt-1">
+                      <a
+                        className="d-flex justify-content-center"
+                        href="https://myportfolio.com.co/resume.pdf"
+                      >
+                        <div className="mt-1">
+                          <CustomButton
+                            text="Resume"
+                            size="small"
+                            icon={<i className="fa-solid fa-angle-down"></i>}
+                          />
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
-
-
-
-              
+              </div>
             </div>
           </div>
         </div>

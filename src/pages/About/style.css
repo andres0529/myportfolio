@@ -28,7 +28,7 @@
   border-color: #ee445f;
   background-color: transparent;
 }
-#about img {
+#about .flip-card-front img {
   width: 450px;
   height: 500px;
   border-radius: 5px;
@@ -38,11 +38,12 @@
   transition: all linear 0.3s;
   border-radius: 15px;
 }
-#about img:hover {
+#about .flip-card-front img:hover {
   box-shadow: blue 0px 0px 5px 8px inset, rgb(52 60 64) 15px 16px 2px -4px,
     rgb(238 68 95) 15px 15px;
   transition: all linear 0.3s;
 }
+
 #about p {
   text-align: justify;
 }
@@ -123,15 +124,12 @@
   transition: var(--transition);
 }
 .card__bx .card__data .card__content {
-  position: absolute;
-  top: 150px;
-  padding: 20px;
-  text-align: center;
   display: flex;
+  text-align: center;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 15px;
-  color: var(--txt-clr);
+  height: 100%;
 }
 @keyframes animate {
   0% {
