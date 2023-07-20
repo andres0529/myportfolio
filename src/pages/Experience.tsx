@@ -119,58 +119,6 @@ const data = {
 
         "Complete creation of the Drive Away Hunger application, which is based on ReactJS components, React Router, Hooks, API Context, Bootstrap, Material UI as FrontEnd and ASP.NET 6 and SQL for the BackEnd",
       ],
-    },
-    {
-      id: "otro",
-      logoUrl: require("./../assets/img/logos/bdo.svg").default,
-      companyName: "BDO Canada",
-      position: "Software and Web Developer, Intern",
-      date: "May 2022 - Aug 2022",
-      description: `BDO or Binder Dijker Otte is an international network of public accounting, tax, consulting and business advisory firms. Some of the tasks performed were:`,
-      tasks: [
-        "To give back and support communities in need, BDO Canada annually launches the <a href='https://www.bdo.ca/en-ca/about/people-values/drive-away-hunger/'>Drive Away Hunger</a> campaign with a goal to donate 1 million meals to food banks across Canada. For fundraising, the DAH application was developed from its design to its deployment.",
-
-        "Complete creation of the Drive Away Hunger application, which is based on ReactJS components, React Router, Hooks, API Context, Bootstrap, Material UI as FrontEnd and ASP.NET 6 and SQL for the BackEnd",
-      ],
-    },
-    {
-      id: "otro",
-      logoUrl: require("./../assets/img/logos/bdo.svg").default,
-      companyName: "BDO Canada",
-      position: "Software and Web Developer, Intern",
-      date: "May 2022 - Aug 2022",
-      description: `BDO or Binder Dijker Otte is an international network of public accounting, tax, consulting and business advisory firms. Some of the tasks performed were:`,
-      tasks: [
-        "To give back and support communities in need, BDO Canada annually launches the <a href='https://www.bdo.ca/en-ca/about/people-values/drive-away-hunger/'>Drive Away Hunger</a> campaign with a goal to donate 1 million meals to food banks across Canada. For fundraising, the DAH application was developed from its design to its deployment.",
-
-        "Complete creation of the Drive Away Hunger application, which is based on ReactJS components, React Router, Hooks, API Context, Bootstrap, Material UI as FrontEnd and ASP.NET 6 and SQL for the BackEnd",
-      ],
-    },
-    {
-      id: "otro",
-      logoUrl: require("./../assets/img/logos/bdo.svg").default,
-      companyName: "BDO Canada",
-      position: "Software and Web Developer, Intern",
-      date: "May 2022 - Aug 2022",
-      description: `BDO or Binder Dijker Otte is an international network of public accounting, tax, consulting and business advisory firms. Some of the tasks performed were:`,
-      tasks: [
-        "To give back and support communities in need, BDO Canada annually launches the <a href='https://www.bdo.ca/en-ca/about/people-values/drive-away-hunger/'>Drive Away Hunger</a> campaign with a goal to donate 1 million meals to food banks across Canada. For fundraising, the DAH application was developed from its design to its deployment.",
-
-        "Complete creation of the Drive Away Hunger application, which is based on ReactJS components, React Router, Hooks, API Context, Bootstrap, Material UI as FrontEnd and ASP.NET 6 and SQL for the BackEnd",
-      ],
-    },
-    {
-      id: "otro",
-      logoUrl: require("./../assets/img/logos/bdo.svg").default,
-      companyName: "BDO Canada",
-      position: "Software and Web Developer, Intern",
-      date: "May 2022 - Aug 2022",
-      description: `BDO or Binder Dijker Otte is an international network of public accounting, tax, consulting and business advisory firms. Some of the tasks performed were:`,
-      tasks: [
-        "To give back and support communities in need, BDO Canada annually launches the <a href='https://www.bdo.ca/en-ca/about/people-values/drive-away-hunger/'>Drive Away Hunger</a> campaign with a goal to donate 1 million meals to food banks across Canada. For fundraising, the DAH application was developed from its design to its deployment.",
-
-        "Complete creation of the Drive Away Hunger application, which is based on ReactJS components, React Router, Hooks, API Context, Bootstrap, Material UI as FrontEnd and ASP.NET 6 and SQL for the BackEnd",
-      ],
     }
   ],
 };

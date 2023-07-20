@@ -92,21 +92,16 @@ const About = () => {
 
               <div className="card__bx card__2 flip-card-back">
                 <div className="card__data">
-                  <div className="card__icon">
-                    <div className="card__icon-bx">
-                      <i className="fa-solid fa-code"></i>
-                    </div>
-                  </div>
                   <div className="card__content">
                     <figure>
-                      <img src={qr} alt="qrlogo" className="w-50" />
+                      <img src={qr} alt="qrlogo" />
                     </figure>
                     <div className="mt-1">
                       <a
                         className="d-flex justify-content-center"
                         href="https://myportfolio.com.co/resume.pdf"
                       >
-                        <div className="mt-1">
+                        <div className="mt-lg-1">
                           <CustomButton
                             text="Resume"
                             size="small"

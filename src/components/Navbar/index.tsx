@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggler, setToggler] = useState("");
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark" onMouseLeave={()=>setToggler("")}>
       <div className="container">
         <figure>
           <NavLink to="/home">
