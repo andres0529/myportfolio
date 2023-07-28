@@ -21,7 +21,10 @@ html {
   background-repeat: no-repeat;
   background-position: bottom;
 }
-
+/* pruebeeeeeeloooooooooooooooooooooooooooooooooooooooo */
+.App, html{
+  height: 100v;
+}
 
 body {
   background-color: #192226d0;
@@ -58,131 +61,7 @@ li {
 }
 
 /* ************** Experience style **************/
-#experience {
-  color: #fff;
-}
 
-#experience button {
-  font-family: "Lato";
-  letter-spacing: 0.7px;
-  height: 70px;
-  color: #ffffffeb;
-  /* color: rgb(0 214 255); */
-  text-align: initial;
-  border-left: 1px solid;
-  border-right: none;
-  border-top: none;
-  border-bottom: none;
-  border-radius: 0;
-}
-
-#experience button:hover {
-  color: rgb(0 214 255);
-  background-color: #345362;
-}
-
-#experience button:checked {
-  color: #ee445f;
-  border-left: 3px solid;
-}
-
-#experience li {
-  color: #ffffffeb;
-  font-size: 15px;
-  font-family: "Lato";
-  letter-spacing: 0.5px;
-  font-weight: 300;
-  hyphens: auto;
-  text-decoration: none;
-  list-style: none;
-}
-
-#experience li:before {
-  content: "▹";
-  position: absolute;
-  margin-left: -40px;
-  color: #28dcffdb;
-  font-size: 25px;
-  line-height: 50px;
-}
-
-.activeButton {
-  color: #ee445f !important;
-  border-left: 3px solid !important;
-}
-
-#experience .jobsContainer figure {
-  width: 50px;
-  margin-left: 3rem;
-}
-
-#experience .skillsProjectsContainer figure {
-  width: 50px;
-}
-
-#experience .skillsProjectsContainer .skills,
-#experience .skillsProjectsContainer .projects {
-  row-gap: 20px;
-}
-
-#experience .skillsProjectsContainer .skills div,
-#experience .skillsProjectsContainer .projects div {
-  padding: 5px;
-  margin-right: 7px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#experience .skillsProjectsContainer .skills span,
-#experience .skillsProjectsContainer .projects span {
-  color: #ffffffeb;
-  font-size: 12px;
-  font-family: "Lato";
-  letter-spacing: 0.5px;
-  font-weight: 300;
-  hyphens: auto;
-}
-
-.skillsProjectsContainer img {
-  width: 40px;
-  height: 40px;
-}
-
-#experience
-  .skills-projects-bg
-  div:first-child.skillsProjectsContainer
-  div:nth-child(3)
-  img {
-  -webkit-animation: spin 2s linear infinite;
-  animation: spinReact 3s linear infinite;
-}
-
-#experience .skills-projects-bg {
-  background-color: #222b31;
-  padding: 15px;
-  box-shadow: #222b31 24px 38px 0px 0px inset, rgb(52 60 64) 42px 36px 0px -23px,
-    rgb(0 214 255) 41px 35px 0px -16px, rgb(52 60 64) 0px 28px 0px -8px;
-}
-
-@-webkit-keyframes spinReact {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes spinReact {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /* ************** Services style **************/
 

@@ -1,0 +1,206 @@
+#experience {
+  color: #fff;
+}
+
+#experience button {
+  font-family: "Lato";
+  letter-spacing: 0.7px;
+  height: 70px;
+  color: #ffffffeb;
+  /* color: rgb(0 214 255); */
+  text-align: initial;
+  border-left: 1px solid;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 0;
+}
+
+#experience button:hover {
+  color: rgb(0 214 255);
+  background-color: #345362;
+}
+
+#experience button:checked {
+  color: #ee445f;
+  border-left: 3px solid;
+}
+
+#experience li {
+  color: #ffffffeb;
+  font-size: 15px;
+  font-family: "Lato";
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  hyphens: auto;
+  text-decoration: none;
+  list-style: none;
+}
+
+#experience li:before {
+  content: "▹";
+  position: absolute;
+  margin-left: -40px;
+  color: #28dcffdb;
+  font-size: 25px;
+  line-height: 50px;
+}
+
+.activeButton {
+  color: #ee445f !important;
+  border-left: 3px solid !important;
+}
+
+#experience .jobsContainer figure {
+  width: 50px;
+  margin-left: 3rem;
+}
+
+#experience .skillsProjectsContainer figure {
+  width: 50px;
+}
+
+#experience .skillsProjectsContainer .skills,
+#experience .skillsProjectsContainer .projects {
+  row-gap: 20px;
+}
+
+#experience .skillsProjectsContainer .skills div,
+#experience .skillsProjectsContainer .projects div {
+  padding: 5px;
+  margin-right: 7px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#experience .skillsProjectsContainer .skills span,
+#experience .skillsProjectsContainer .projects span {
+  color: #ffffffeb;
+  font-size: 12px;
+  font-family: "Lato";
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  hyphens: auto;
+}
+
+.skillsProjectsContainer img {
+  width: 40px;
+  height: 40px;
+}
+
+#experience
+  .skills-projects-bg
+  div:first-child.skillsProjectsContainer
+  div:nth-child(3)
+  img {
+  -webkit-animation: spin 2s linear infinite;
+  animation: spinReact 3s linear infinite;
+}
+
+#experience .skills-projects-bg {
+  height: 500px;
+  background-color: #222b318f;
+  padding: 15px;
+  box-shadow: rgb(52 60 64 / 26%) 31px 29px 2px -4px,
+    rgb(0 214 255 / 18%) 32px 30px;
+}
+
+@-webkit-keyframes spinReact {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spinReact {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#experience .mobile-arrows {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  html {
+    overflow-y: auto;
+  }
+
+  #experience li {
+    padding: 0px 10px;
+  }
+
+  #experience .job-btns {
+    width: calc(100% + 50px);
+    padding-left: 35px;
+    margin-left: -15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  #experience .job-btns::-webkit-scrollbar {
+    display: none;
+  }
+
+  #experience .job-info {
+    margin-top: 2rem !important;
+  }
+
+  #experience {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0;
+    padding-top: 80px;
+  }
+
+  #experience button {
+    height: 40px;
+    text-align: center;
+    border-left: none;
+    min-width: 190px;
+    padding: 0px 15px;
+  }
+
+  .activeButton {
+    color: #ee445f !important;
+    border-left: none !important;
+    border-bottom: 3px solid !important;
+  }
+
+  #experience .skillsProjectsContainer .skills,
+  #experience .skillsProjectsContainer .projects {
+    justify-content: space-between;
+  }
+
+  #experience .skills-projects-bg {
+    height: auto;
+    box-shadow: none;
+  }
+
+  #experience .jobsContainer {
+    position: relative;
+  }
+
+  #experience .mobile-arrows {
+    display: block;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  #experience .mobile-arrows span:first-child {
+    margin-left: -25px;
+  }
+
+  #experience .mobile-arrows span:last-child {
+    margin-right: -25px;
+  }
+}

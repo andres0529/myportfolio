@@ -199,9 +199,7 @@
 Screen - Small (xs) - 480px or vertical 320px
 ====================================================================================================*/
 @media (max-width: 767px) {
-  #home {
-    height: 100%;
-  }
+
   #home .glitch:before {
     left: 43px;
   }

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import logo from "./../../assets/img/logos/logoPage.png"; // with import
 import "./style.css";
 
-const data = ["home", "about", "experience", "services", "contact"];
+const data = ["home", "about", "experience", "contact"];
 
 const Navbar = () => {
   const [toggler, setToggler] = useState("");

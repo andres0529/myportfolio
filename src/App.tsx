@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
-import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import { useEffect, useState } from "react";
 import Landing from "./pages/Landing";
@@ -34,7 +33,6 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/experience" element={<Experience />} />
-            <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </BrowserRouter>

@@ -1,66 +1,67 @@
 import React, { useState } from "react";
-import Project from "../components/Project";
-import Skill from "../components/Skill";
+import Project from "../../components/Project";
+import Skill from "../../components/Skill";
+import "./style.css";
 
 const data = {
   skills: [
     {
       name: "HTML5",
-      urlImage: require("./../assets/img/logos/html.svg").default,
+      urlImage: require("./../../assets/img/logos/html.svg").default,
     },
     {
       name: "Javascript",
-      urlImage: require("./../assets/img/logos/javascript.svg").default,
+      urlImage: require("./../../assets/img/logos/javascript.svg").default,
     },
     {
       name: "ReactJS",
-      urlImage: require("./../assets/img/logos/react.svg").default,
+      urlImage: require("./../../assets/img/logos/react.svg").default,
     },
     {
       name: "Angular",
-      urlImage: require("./../assets/img/logos/angular.svg").default,
+      urlImage: require("./../../assets/img/logos/angular.svg").default,
     },
     {
       name: "Redux",
-      urlImage: require("./../assets/img/logos/redux.svg").default,
+      urlImage: require("./../../assets/img/logos/redux.svg").default,
     },
     {
       name: "NextJS",
-      urlImage: require("./../assets/img/logos/next.svg").default,
+      urlImage: require("./../../assets/img/logos/next.svg").default,
     },
     {
       name: "CSS",
-      urlImage: require("./../assets/img/logos/css.svg").default,
+      urlImage: require("./../../assets/img/logos/css.svg").default,
     },
     {
       name: "Bootstrap",
-      urlImage: require("./../assets/img/logos/bootstrap.svg").default,
+      urlImage: require("./../../assets/img/logos/bootstrap.svg").default,
     },
 
     {
       name: "Jest",
-      urlImage: require("./../assets/img/logos/jest.svg").default,
+      urlImage: require("./../../assets/img/logos/jest.svg").default,
     },
     {
       name: "GIT",
-      urlImage: require("./../assets/img/logos/git.svg").default,
+      urlImage: require("./../../assets/img/logos/git.svg").default,
     },
   ],
 
   projects: [
     {
       name: "DAH",
-      urlImage: require("./../assets/img/logos/dha.svg").default,
+      urlImage: require("./../../assets/img/logos/dha.svg").default,
       urlRepo: "https://github.com/andres0529/Drive-Away-Hunger.git",
     },
     {
       name: "Georgian WIX",
-      urlImage: require("./../assets/img/logos/georgianWix.svg").default,
+      urlImage: require("./../../assets/img/logos/georgianWix.svg").default,
       urlRepo: "https://github.com/andres0529/project2.git",
     },
     {
       name: "RHBlood",
-      urlImage: require("./../assets/img/logos/rh.svg").default,
+      urlImage: require("./../../assets/img/logos/rh.svg").default,
       urlRepo: "https://github.com/andres0529/rhblood.git",
     },
   ],
@@ -68,7 +69,7 @@ const data = {
   experience: [
     {
       id: "conexcol",
-      logoUrl: require("./../assets/img/logos/conexcol.svg").default,
+      logoUrl: require("./../../assets/img/logos/conexcol.svg").default,
       companyName: "Conexcol Cloud",
       position: "Support Engineer",
       date: "Feb 2010 - Nov 2016",
@@ -82,7 +83,7 @@ const data = {
     },
     {
       id: "paradigma",
-      logoUrl: require("./../assets/img/logos/paradigma.svg").default,
+      logoUrl: require("./../../assets/img/logos/paradigma.svg").default,
       companyName: "Paradigma Solutions",
       position: "Web Developer",
       date: "Jul 2019 - Apr 2020",
@@ -90,13 +91,13 @@ const data = {
       tasks: [
         "Maintenance and deployment of DOT NET NUKE components for <a href='https://argos-us.com/'>Argos pages </a> in Colombia, Honduras, USA and Guyanna",
         "Developed Single Page Apps (SPAs) using React Js, MaterialUI and ReactHooks.",
-        "I collaborated in the creation of React components for the web application of <a href='https://www.contraloria.gov.co/es/web/guest/atencion-al-ciudadano/denuncias-y-otras-solicitudes-pqrd'>Contraloria Genral de la Nacion</a> using Jest and Huskey as testing frameworks and Redux for application state management",
+        "I collaborated in the creation of React components for the web application of using Jest and Huskey as testing frameworks and Redux for application state management",
         "developed some components in Angular CLI for the creation of the Kitchensink library, a library for internal use of the company for the development of applications",
       ],
     },
     {
       id: "globant",
-      logoUrl: require("./../assets/img/logos/globant.svg").default,
+      logoUrl: require("./../../assets/img/logos/globant.svg").default,
       companyName: "Globant",
       position: "Web UI Developer",
       date: "Dec 2020 - Nov 2021",
@@ -104,12 +105,12 @@ const data = {
       tasks: [
         "I collaborated in the migration of 2 applications in AngularJS to ReactJS, using technologies such as Redux, Hooks, Typescript, Recharts and I was in the complete life cycle of the project.",
         "Technologies such as StoryBookJS and Jest for unit tests were used for the development of each component, which allowed testing the components created before integration.",
-        "The client for which we developed the migration is <a href='https://www.americancentury.com/home/'>American Century Investment</a> , with whom we had weekly meetings to show the progress of the project using the SCRUM methodology.",
+        "The client for which we developed the migration is American Century Investment, with whom we had weekly meetings to show the progress of the project using the SCRUM methodology.",
       ],
     },
     {
       id: "bdo",
-      logoUrl: require("./../assets/img/logos/bdo.svg").default,
+      logoUrl: require("./../../assets/img/logos/bdo.svg").default,
       companyName: "BDO Canada",
       position: "Software and Web Developer, Intern",
       date: "May 2022 - Aug 2022",
@@ -119,7 +120,7 @@ const data = {
 
         "Complete creation of the Drive Away Hunger application, which is based on ReactJS components, React Router, Hooks, API Context, Bootstrap, Material UI as FrontEnd and ASP.NET 6 and SQL for the BackEnd",
       ],
-    }
+    },
   ],
 };
 
@@ -168,6 +169,14 @@ const Experience = () => {
         {/* <!--******************************** container for jobs ************************************--> */}
         <div className=" col-12 col-md-8">
           <div className="jobsContainer d-flex flex-column flex-md-row flex-lg-row row">
+            <div className="mobile-arrows">
+              <span>
+                <i className="fa-solid fa-arrow-left-long fa-beat-fade fa-2xs"></i>
+              </span>
+              <span>
+                <i className="fa-solid fa-arrow-right-long fa-beat-fade fa-2xs"></i>
+              </span>
+            </div>
             <div className="job-btns col-12 col-md-3 d-flex flex-row flex-md-column ">
               {
                 /* //****** Method to create Buttons accoridng to the data ****/
