@@ -22,19 +22,23 @@ html {
 }
 
 body {
-  background-color: #192226b4;
+  /* background-color: #192226b4; */
+  background-color: transparent;
 }
 
+/* --------------------this is for cpanel and live enviroments */
+
+.App {
+  height: 90%;
+}
 
 #root,
 body,
 html {
   height: 100%;
 }
+/* --------------------this is for cpanel and live enviroments */
 
-body {
-  /* background-color: transparent; */
-}
 p {
   color: #ffffffeb;
   font-size: 15px;
