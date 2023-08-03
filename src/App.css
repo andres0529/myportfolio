@@ -20,24 +20,20 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* pruebeeeeeeloooooooooooooooooooooooooooooooooooooooo */
 
 body {
-  /* background-color: #192226d0; */
+  background-color: #192226b4;
 }
 
-.App {
-  height: 90%;
-}
 
-.root,
+#root,
 body,
 html {
   height: 100%;
 }
 
 body {
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 p {
   color: #ffffffeb;
