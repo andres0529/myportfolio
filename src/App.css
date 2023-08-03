@@ -19,13 +19,25 @@ html {
   background-image: url("./assets/img/bg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
 }
 /* pruebeeeeeeloooooooooooooooooooooooooooooooooooooooo */
 
+body {
+  /* background-color: #192226d0; */
+}
+
+.App {
+  height: 90%;
+}
+
+.root,
+body,
+html {
+  height: 100%;
+}
 
 body {
-  background-color: #192226d0;
+  background-color: transparent;
 }
 p {
   color: #ffffffeb;
