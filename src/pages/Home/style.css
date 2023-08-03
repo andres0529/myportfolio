@@ -7,6 +7,7 @@
   height: 90%;
 }
 
+
 #home .nav-link {
   display: flex;
   width: 250px;
@@ -199,7 +200,6 @@
 Screen - Small (xs) - 480px or vertical 320px
 ====================================================================================================*/
 @media (max-width: 767px) {
-
   #home .glitch:before {
     left: 43px;
   }
