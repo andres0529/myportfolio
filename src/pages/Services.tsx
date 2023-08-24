@@ -37,14 +37,17 @@ const Services = () => {
         if (index + 1 > rightColumnStart) {
           return (
             <div
-            key={index}
+              key={index}
               className={
                 index % 2 === 0
                   ? "rightBackgroundRed service"
                   : "rightBackgroundBlue service"
               }
             >
-              <div key={index} className="serviceInfo d-flex align-items-baseline">
+              <div
+                key={index}
+                className="serviceInfo d-flex align-items-baseline"
+              >
                 {service.serviceIcon}
                 <h5>{service.serviceInfo}</h5>
               </div>
@@ -70,7 +73,7 @@ const Services = () => {
         }
       }
 
-      return<></>
+      return <></>;
     });
 
   return (

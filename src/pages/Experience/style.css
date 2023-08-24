@@ -14,6 +14,9 @@
   border-top: none;
   border-bottom: none;
   border-radius: 0;
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
 }
 
 #experience button:hover {
@@ -28,7 +31,7 @@
 
 #experience li {
   color: #ffffffeb;
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Lato";
   letter-spacing: 0.5px;
   font-weight: 300;
@@ -56,24 +59,20 @@
   margin-left: 3rem;
 }
 
-#experience .skillsProjectsContainer figure {
-  width: 50px;
-}
-
 #experience .skillsProjectsContainer .skills,
 #experience .skillsProjectsContainer .projects {
-  row-gap: 20px;
+  justify-content: space-around;
+  gap: 30px 20px;
 }
 
 #experience .skillsProjectsContainer .skills div,
 #experience .skillsProjectsContainer .projects div {
-  padding: 5px;
-  margin-right: 7px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 60px;
 }
 
 #experience .skillsProjectsContainer .skills span,
@@ -87,25 +86,39 @@
 }
 
 .skillsProjectsContainer img {
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
 }
 
 #experience
   .skills-projects-bg
   div:first-child.skillsProjectsContainer
-  div:nth-child(3)
+  div:nth-child(7)
   img {
   -webkit-animation: spin 2s linear infinite;
   animation: spinReact 3s linear infinite;
 }
 
 #experience .skills-projects-bg {
-  height: 500px;
+  height: fit-content;
   background-color: #222b318f;
   padding: 15px;
   box-shadow: rgb(52 60 64 / 26%) 31px 29px 2px -4px,
     rgb(0 214 255 / 18%) 32px 30px;
+}
+
+#experience .skills::after {
+  content: "";
+  flex: auto;
+}
+
+#experience .skills:last-child > div {
+  text-align: left; 
+}
+
+#experience .skills div span {
+  text-align: center;
 }
 
 @-webkit-keyframes spinReact {

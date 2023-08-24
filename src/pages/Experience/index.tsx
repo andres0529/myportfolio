@@ -2,6 +2,15 @@ import React, { useState } from "react";
 import Project from "../../components/Project";
 import Skill from "../../components/Skill";
 import "./style.css";
+import tailwind from "./../../assets/img/logos/tailwind.png";
+import express from "./../../assets/img/logos/express.png";
+import node from "./../../assets/img/logos/node.png";
+import vue from "./../../assets/img/logos/vue.png";
+import material from "./../../assets/img/logos/material.png";
+import net from "./../../assets/img/logos/net.png";
+import php from "./../../assets/img/logos/php.png";
+import mongo from "./../../assets/img/logos/mongo.png";
+import github from "./../../assets/img/logos/github.png";
 
 const data = {
   skills: [
@@ -9,6 +18,23 @@ const data = {
       name: "HTML5",
       urlImage: require("./../../assets/img/logos/html.svg").default,
     },
+    {
+      name: "CSS",
+      urlImage: require("./../../assets/img/logos/css.svg").default,
+    },
+    {
+      name: "Material UI",
+      urlImage: material,
+    },
+    {
+      name: "Bootstrap",
+      urlImage: require("./../../assets/img/logos/bootstrap.svg").default,
+    },
+    {
+      name: "Tailwind CSS",
+      urlImage: tailwind,
+    },
+
     {
       name: "Javascript",
       urlImage: require("./../../assets/img/logos/javascript.svg").default,
@@ -18,33 +44,50 @@ const data = {
       urlImage: require("./../../assets/img/logos/react.svg").default,
     },
     {
-      name: "Angular",
-      urlImage: require("./../../assets/img/logos/angular.svg").default,
-    },
-    {
-      name: "Redux",
-      urlImage: require("./../../assets/img/logos/redux.svg").default,
+      name: "VueJS",
+      urlImage: vue,
     },
     {
       name: "NextJS",
       urlImage: require("./../../assets/img/logos/next.svg").default,
     },
     {
-      name: "CSS",
-      urlImage: require("./../../assets/img/logos/css.svg").default,
-    },
-    {
-      name: "Bootstrap",
-      urlImage: require("./../../assets/img/logos/bootstrap.svg").default,
+      name: "Redux",
+      urlImage: require("./../../assets/img/logos/redux.svg").default,
     },
 
     {
-      name: "Jest",
-      urlImage: require("./../../assets/img/logos/jest.svg").default,
+      name: "Node JS",
+      urlImage: node,
     },
+    {
+      name: "Express JS",
+      urlImage: express,
+    },
+    {
+      name: "Mongo DB",
+      urlImage: mongo,
+    },
+    {
+      name: ".NET MVC",
+      urlImage: net,
+    },
+    {
+      name: "PHP",
+      urlImage: php,
+    },
+
     {
       name: "GIT",
       urlImage: require("./../../assets/img/logos/git.svg").default,
+    },
+    {
+      name: "GitHub",
+      urlImage: github,
+    },
+    {
+      name: "Jest",
+      urlImage: require("./../../assets/img/logos/jest.svg").default,
     },
   ],
 
@@ -253,27 +296,6 @@ const Experience = () => {
                   key={skill.name}
                   name={skill.name}
                   urlImage={skill.urlImage}
-                />
-              ))}
-            </div>
-          </div>
-          {/* <!-- container for projects --> */}
-          <div className="skillsProjectsContainer mt-4">
-            <div className="col-12 d-flex flex-column flex-md-row flex-lg-row align-items-md-center">
-              <div className=" col-md-4">
-                <h6 className="titleProjects">Some Projects</h6>
-              </div>
-              <div className=" col-md-8">
-                <hr />
-              </div>
-            </div>
-            <div className="d-flex flex-wrap projects">
-              {data.projects.map((project) => (
-                <Project
-                  key={project.name}
-                  name={project.name}
-                  urlImage={project.urlImage}
-                  urlRepo={project.urlRepo}
                 />
               ))}
             </div>
